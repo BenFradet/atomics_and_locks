@@ -1,4 +1,8 @@
-use std::{sync::atomic::{fence, AtomicBool, Ordering}, thread, time::Duration};
+use std::{
+    sync::atomic::{AtomicBool, Ordering, fence},
+    thread,
+    time::Duration,
+};
 
 // non-atomic shared variable
 static mut DATA: [u64; 10] = [0; 10];
